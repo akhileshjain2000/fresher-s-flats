@@ -1,0 +1,344 @@
+<!Doctype html>
+<head>
+    <title>Room Partner
+    </title>
+     
+     <link rel="stylesheet"  type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+    h1{
+    padding-left: 10px;
+        }
+        h2{
+            text-align:center;
+            padding-bottom: 20px;
+        }
+        html,body{
+            height:100%;
+            padding: 0px;
+            margin:0px;
+            background:#f6f6f6;
+            
+        }
+        
+        .card{
+            
+            height:290px;
+        }
+         .header{
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-family:sans-serif;       
+        }
+        .search-field{
+            height:50px;
+            padding:10px;
+            border-color: blue;
+            border-radius:25px;
+            outline:none;
+        }
+        .business{
+            width:400px;
+        }
+        .search-btn{
+            height:50px;
+            width:150px;
+            background:#ffeb3b;
+            border:none;
+            color:#000;
+            border-radius:25px;
+        }
+        input{
+            border-color: red;
+        }
+           .footer{
+             background:#303036;
+            color:#d3d3d3;
+            height:400px;
+            position:relative;
+        }
+        .footer .footer-bottom{
+             background:#343a40;
+            color:#686868;
+            height: 50px;
+            width:100%;
+            text-align:center;
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            padding-top:20px;
+            
+        }
+           .footer .footer-content{
+            
+            padding-top:20px;
+            height:350px;
+            display:flex;
+          
+        }
+           .footer .footer-content .footer-section{
+            flex:1;
+            padding:25px;
+        }
+        .footer .footer-content .about .contact span{
+            display:block;
+            font-size:1.1em;
+            margin-bottom:8px;
+        }
+          .footer .footer-content .about .socials a{
+            border:1px solid grey;
+            width:45px;
+            height: 41px;
+            padding-top: 5px;
+            margin-right:5px;
+            text-align:center;
+            display:inline-block;
+            font-size:1.3em;
+            border-radius: 5px;
+            transition:all .3s;
+        }
+         .footer .footer-content .about .socials a:hover{
+            border:1px solid white;
+            color:white;
+            transition:all .3s;
+            padding: 10px;
+            
+        }
+       
+        ul{
+            list-style:none;
+        }
+        a{
+            color:white;
+        }
+        a:hover{
+            color:white;
+        }
+        
+    </style>
+     
+    </head>
+<body>
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container">
+  <a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i> </a>
+         </div>
+         <ul class="nav navbar-nav navbar-right">
+                 <li><a href="http://localhost:5000/users/register"> Your listing Get Started </a></li>
+    
+      </ul>
+</nav>
+    
+ <!--   <div class="jumbotron ">
+
+    <h1 ><i class="fa fa-camera-retro" aria-hidden="true"></i> The Image Gallery</h1>
+    <p class="lead">A bunch of beautiful images that I didn't take(except for the first one)</p>
+  </div>
+    </div>-->
+    <br><br><br>
+    <h1>Find the perfect Room Partner <br> for You</h1>
+     <div class="header">
+             <form id="link">
+      <select id ="dropDownId" style="width:300px;height:46px;margin:16px;border-radius: 20px;background:#2a2a2a;color: white;">
+        <option  value="" disabled selected> -- select a city -- </option>
+            <option value="lucknow">Lucknow</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="punjab">Punjab</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="Meerut">Meerut</option>
+            <option value="Pune">Pune</option>
+            <option value="ghaziabad">Ghaziabad</option>
+            <option value="Agra">Agra</option>
+            <option value="mathura">Mathura</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Bengalore">Bengalore</option>
+            <option value="Varanasi">Varanasi</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Patna">Patna</option>
+     </select>
+         
+         
+             <button class="search-btn SubmitButton" name="SUBMITBUTTON" value="Submit" type="submit">Search</button>
+            
+             </form>
+         </div>
+    <br><br>
+    <h2>Search in Top Cities</h2>
+     <div class="container">
+    <div class="row">
+  <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="varanasi3.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Varanasi</h2>
+      
+      </div>
+    </div>
+        </div>
+ <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="Lucknow-City.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Lucknow</h2>
+        
+      </div>
+    </div>
+        </div>
+ <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="mumbai2.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Mumbai</h2>
+       
+      </div>
+    </div>
+        </div>
+
+    
+     
+        </div>
+    </div>
+     <div class="container">
+    <div class="row">
+  <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="kolkata2.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Kolkata</h2>
+        
+      </div>
+    </div>
+        </div>
+ <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="kanpur3.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Kanpur</h2>
+       
+      </div>
+    </div>
+        </div>
+ <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="delhi.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Delhi</h2>
+        
+      </div>
+    </div>
+        </div>
+
+    
+     
+        </div>
+    </div>
+     <div class="container">
+    <div class="row">
+  <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="agra3.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Agra</h2>
+      
+      </div>
+    </div>
+        </div>
+ <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="punjab2.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Punjab</h2>
+        
+      </div>
+    </div>
+        </div>
+ <div class="col-lg-4">
+    <div class="card">
+      <img  class="card-img-top" src="pune.jpg" >
+      <div class="card-body">
+        <h2 class="card-title">Pune</h2>
+      
+      </div>
+    </div>
+        </div>
+
+    
+     
+        </div>
+    </div>
+    <br><br><br><br>
+    <h2>Top Cities</h2>
+     <div class="footer">
+             <div class="footer-content">
+    <div class="footer-section links">
+    <ul>
+        <a href="#">  <li>Noida</li></a>
+        <a href="#">  <li>Ghaziabad</li></a>
+        <a href="#"> <li>Mathura</li></a>
+        <a href="#">  <li>Patna</li></a>
+        <a href="#"> <li>Meerut</li></a>
+        <a href="#"> <li>Bengalore</li></a>
+        <a href="#"> <li>Rajisthan</li></a>
+        <a href="#"><li>Jaipur</li></a>
+        <a href="#"> <li>Greater Noida</li></a>    
+    </ul>
+    </div>
+    <div class="footer-section links">
+     <ul>
+         <a href="roomester.html">   <li>Lucknow</li></a>
+         <a href="#">  <li>Kanpur</li></a>
+         <a href="#">  <li>Delhi</li></a>
+         <a href="#"><li>Varanasi</li></a>
+         <a href="#"> <li>Agra</li></a>
+         <a href="#"><li>Aligarh</li></a>
+         <a href="#"> <li>Chennai</li></a>
+         <a href="#">  <li>Hyderabad</li></a>
+         <a href="#"> <li>Chandigarh</li></a>    
+    </ul>
+    </div>
+    <div class="footer-section links">
+     <ul>
+         <a href="#"><li>Bhopal</li></a>
+         <a href="#"> <li>Indore</li></a>
+         <a href="#"> <li>Surat</li></a>
+         <a href="#"> <li>Gurugram</li></a>
+         <a href="#"> <li>Nagpur</li></a>
+         <a href="#"> <li>Prayagraj</li></a>
+         <a href="#">  <li>Udaipur</li></a>
+         <a href="#"> <li>Amritsar</li></a>
+         <a href="#"> <li>Nashik</li>  </a>  
+    </ul>
+    </div>
+    <div class="footer-section links">
+     <ul>
+         <a href="#"> <li>Ranchi</li></a>
+         <a href="#">   <li>Uttrakhand</li></a>
+         <a href="#"> <li>Raipur</li></a>
+         <a href="#"> <li>Faridabad</li></a>
+         <a href="#">  <li>Bareilly</li></a>
+         <a href="#"> <li>Moradabad</li></a>
+         <a href="#">  <li>Jhansi</li></a>
+         <a href="#">  <li>Gorakhpur</li></a>
+         <a href="#">  <li>Etawah</li>  </a>  
+    </ul>
+    </div>
+         </div>
+    </div>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <script src = "//code.jquery.com/jquery-3.0.0.min.js"></script> <!-- add jquery library-->
+<script type = "text/javascript">
+$('.SubmitButton').click(function(){ // on submit button click
+
+    var urldata = $('#dropDownId :selected').val(); // get the selected  option value
+     window.open("http://127.0.0.1:49852/"+urldata+".html")  // open a new window. here you need to change the url according to your wish.
+});
+
+</script>
+    </body>
+</html>
